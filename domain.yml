@@ -1,0 +1,60 @@
+version: "3.1"
+
+intents:
+  - greet
+  - claim_new
+  - incident_details
+  - goodbye
+  - bot_challenge
+  - outofscope
+  - give_policy_type:
+      use_entities:
+        - type
+  - give_name:
+      use_entities:
+        - name
+  - policy_number:
+      use_entities:
+        - policy_number
+  - incident_date:
+      use_entities:
+        - date
+  - phone_number:
+      use_entities:
+        - phone_number
+
+entities:
+  - type
+  - name
+  - policy_number
+  - date
+  - phone_number
+
+responses:
+  utter_goodbye:
+    - text: "Thank you."
+  utter_greet:
+    - text: "Greetings. How can I help you?"
+  utter_claim_new:
+    - text: "OK. I can help you with that. Let's start with your policy type so that we
+        can look up your policy."
+  utter_give_name:
+    - text: "Please give your name."
+  utter_policy_number:
+    - text: "Give your policy number."
+  utter_incident_date:
+    - text: "When your incident was happened?"
+  utter_incident_details:
+    - text: "Describe what happened in the incident."
+  utter_phone_number:
+    - text: "Please give your phone number"
+  utter_customer_care:
+    - text: "we have save your query, One of our customer executive will get back to you"
+  utter_iamabot:
+    - text: "I am a bot, powered by Rasa."
+  utter_outofscope:
+    - text: "Sorry, I wasn't able to understand. Could you please rephrase it?"
+
+session_config:
+  session_expiration_time: 60
+  carry_over_slots_to_new_session: true
