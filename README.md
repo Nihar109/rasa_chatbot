@@ -20,3 +20,16 @@ Rasa helps you build contextual assistants capable of having layered conversatio
 lots of back-and-forth. In order for a human to have a meaningful exchange with a contextual
 assistant, the assistant needs to be able to use context to build on things that were previously
 discussed – Rasa enables you to build assistants that can do this in a scalable way.
+
+How to get start:
+
+To use the project start with
+1. Clone the repository recursively:
+
+`git clone --recurse-submodules https://github.com/Nihar109/rasa_chatbot`
+
+If you already cloned and forgot to use `--recurse-submodules` you can run `git submodule update --init`
+
+2. Make sure that you fulfill all the requirements: Python 3.9 or later with all [requirements.txt](https://github.com/Nihar109/rasa_chatbot/requirements.txt) dependencies installed, To install, run:
+
+`pip install -r requirements.txt`
