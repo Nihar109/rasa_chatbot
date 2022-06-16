@@ -33,3 +33,18 @@ If you already cloned and forgot to use `--recurse-submodules` you can run `git 
 2. Make sure that you fulfill all the requirements: Python 3.9 or later with all [requirements.txt](https://github.com/Nihar109/rasa_chatbot/requirements.txt) dependencies installed, To install, run:
 
 `pip install -r requirements.txt`
+
+3. To train your model use
+
+'rasa train'
+
+4. Check your trained model for conversation
+
+'rasa shell'
+
+5. To enable your rasa model for api 
+
+'rasa run --enable-api --cors "*"'
+
+6. To check your model to run with socketio run index.html with any web browser
+
