@@ -21,7 +21,7 @@ lots of back-and-forth. In order for a human to have a meaningful exchange with 
 assistant, the assistant needs to be able to use context to build on things that were previously
 discussed – Rasa enables you to build assistants that can do this in a scalable way.
 
-How to get start:
+# How to get start:
 
 To use the project start with
 1. Clone the repository recursively:
